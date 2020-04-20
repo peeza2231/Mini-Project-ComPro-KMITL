@@ -1,10 +1,12 @@
 # Mini-Project-ComPro-KMITL
 //---Test---//
+---
 ## Objective
 *
 *
 
 ## Equipments and Devices
+---
 
 ## Built With
 * Arduino Uno (NodeMCU)
@@ -15,7 +17,7 @@
 *
 *
 
-## Member
+## Contributors
 |Student ID|Name|User Github|
 |--|--|--|
 |62070081|Thanawat Phongrat|[thanawat15](https://github.com/thanawat15)|
