@@ -13,7 +13,9 @@
 
 ## How it works
 *
+*
 
+## Member
 |Student ID|Name|User Github|
 |--|--|--|
 |Thanawat Phongrat|62070081|[thanawat15](https://github.com/thanawat15)|
