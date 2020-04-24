@@ -78,7 +78,7 @@ void showLCD(){
 /*-----------------------Function Show in Blynk Application---------------*/
 void sendSensor(){
   float h = dht.readHumidity();
-  float t = dht.readTemperature(); // or dht.readTemperature(true) for Fahrenheit
+  float t = dht.readTemperature();
 
   if (isnan(h) || isnan(t)) {
         Serial.println("Failed to read from DHT sensor!");
@@ -90,7 +90,8 @@ void sendSensor(){
 /*----------------------------------------------------------------------*/
 
 void setup() {
-    dht.begin();            //Blynk.begin(auth, ssid, pass);  //connect blynk app
+    dht.begin();
+    Blynk.begin(auth, ssid, pass);  //connect blynk app
     Serial.begin(115200);
     Serial.println(LINE.getVersion());
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);   Serial.print("connecting");
