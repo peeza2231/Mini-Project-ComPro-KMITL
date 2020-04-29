@@ -7,7 +7,7 @@
 *
 
 ## Equipments and Devices
-<image src="image/1.jpg" width="33%" height="33%"><image src="image/2.jpg" width="32%" height="33%"><image src="image/3.jpg" width="33%" height="33%">
+<image src="image/1.jpg" width="33%" height="33%"><image src="image/2.jpg" width="33%" height="33%"><image src="image/3.jpg" width="33%" height="33%">
 <image src="image/4.jpg" width="33%" height="33%">
 <image src="image/5.jpg" width="33%" height="33%">
 <table>
