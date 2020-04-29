@@ -7,7 +7,14 @@
 *
 
 ## Equipments and Devices
-*
+*<image src="image/nodemcu.png" width="33%" height="33%"><image src="image/lcd.png" width="33%" height="33%"><image src="image/dht.jpg" width="33%" height="33%">
+
+<table>
+  <tr><th>วัดถุดิบและอุปกรณ์อื่นๆ</th></tr>
+  <tr><td>ฟิวเจอร์บอร์ด</td></tr>
+  <tr><td>ปืนกาว</td></tr>
+  <tr><td>แบตสำรอง (Powerbank)</td></tr>
+</table>
 
 ## Built With
 * Arduino Uno (NodeMCU)
@@ -17,6 +24,9 @@
 ## How it works
 *
 *
+
+## System Diagram
+![System Diagram](image/circuittemp.png)
 
 ## Contributors
 |Student ID|Name|User Github|
