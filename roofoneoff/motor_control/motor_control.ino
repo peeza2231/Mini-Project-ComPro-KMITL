@@ -6,7 +6,7 @@
 #define LeftMotorSpeed  5  
 #define LeftMotorDir    2
  
-char auth[] = "blynktoken";
+char auth[] = "7OopYw4HUxJluQ9cvfeUiOasLV7DzAy_";
 char ssid[] = "No one";
 char pass[] = "linsing607";
 
