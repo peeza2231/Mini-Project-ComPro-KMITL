@@ -7,8 +7,9 @@
 *
 
 ## Equipments and Devices
-<image src="image/1.jpg" width="33%" height="33%"><image src="image/2.jpg" width="33%" height="33%"><image src="image/3.jpg" width="33%" height="33%">
-
+<image src="image/1.jpg" width="33%" height="33%"><image src="image/2.jpg" width="33%" height="33%">
+<image src="image/3.jpg" width="33%" height="33%"><image src="image/4.jpg" width="33%" height="33%">
+			<image src="image/5.jpg" width="33%" height="33%">
 <table>
   <tr><th>วัดถุดิบและอุปกรณ์อื่นๆ</th></tr>
   <tr><td>ฟิวเจอร์บอร์ด</td></tr>
@@ -27,7 +28,7 @@
 
 ## System Diagram
 * Temperature Diagram
-![System Diagram](image/4.png)
+![System Diagram](image/tempcircuit.png)
 
 ## Contributors
 |Student ID|Name|User Github|
