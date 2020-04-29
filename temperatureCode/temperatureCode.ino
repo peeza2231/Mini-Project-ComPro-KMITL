@@ -12,12 +12,12 @@
 //#define DHTTYPE DHT22             //DHT 22  (AM2302), AM2321
 
 /*----------------------------Setup Blnyk Connection----------------------------*/
-#define WIFI_SSID "..."             //Wifi Name
-#define WIFI_PASSWORD "..."         //Password Wifi 
-#define LINE_TOKEN "..."            //Line Token Key
+//#define WIFI_SSID "No one"             //Wifi Name
+//#define WIFI_PASSWORD "linsing607"         //Password Wifi 
+//#define LINE_TOKEN "hNhAxKpBHoM5iQ6EPQ0i7luXhfwcGBIZkTu3JfbshQG"            //Line Token Key
 /*------------------------------------------------------------------------------*/
 
-/*----------------------------Setup Blnyk Connection----------------------------*/
+/*----------------------------Setup Blnyk Connection----------------------------/
     char auth[] = "...";            //Enter the Auth code which was send by Blink. You should get Auth Token in the Blynk App.
                                     //Go to the Project Settings (nut icon).
     char ssid[] = "PSAIR";          //Enter your WIFI Name
@@ -75,7 +75,7 @@ void showLCD(){
     lcd.print("%H");
 }
 
-/*-----------------------Function Show in Blynk Application---------------*/
+/*-----------------------Function Show in Blynk Application---------------/
 void sendSensor(){
   float h = dht.readHumidity();
   float t = dht.readTemperature();
@@ -91,7 +91,7 @@ void sendSensor(){
 
 void setup() {
     dht.begin();
-    Blynk.begin(auth, ssid, pass);  //connect blynk app
+    //Blynk.begin(auth, ssid, pass);  //connect blynk app
     Serial.begin(115200);
     Serial.println(LINE.getVersion());
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);   Serial.print("connecting");
