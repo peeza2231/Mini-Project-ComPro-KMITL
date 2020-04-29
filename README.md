@@ -7,7 +7,7 @@
 *
 
 ## Equipments and Devices
-*<image src="image/1.png" width="33%" height="33%"><image src="image/2.png" width="33%" height="33%"><image src="image/3.jpg" width="33%" height="33%">
+*<image src="image/1.jpg" width="33%" height="33%"><image src="image/2.jpg" width="33%" height="33%"><image src="image/3.jpg" width="33%" height="33%">
 
 <table>
   <tr><th>วัดถุดิบและอุปกรณ์อื่นๆ</th></tr>
