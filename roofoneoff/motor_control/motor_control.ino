@@ -13,8 +13,8 @@ char pass[] = "linsing607";
 int minRange = 312;
 int maxRange = 712;
 
-int minSpeed = 450;
-int maxSpeed = 1023;
+int minSpeed = 100;
+int maxSpeed = 200;
 int noSpeed = 0;
  
  
