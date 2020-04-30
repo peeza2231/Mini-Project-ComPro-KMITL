@@ -1,4 +1,4 @@
-v#include <TridentTD_LineNotify.h>   //Line Notify Library
+#include <TridentTD_LineNotify.h>   //Line Notify Library
 #include <ESP8266WiFi.h>
 //#include <SPI.h>
 #include <BlynkSimpleEsp8266.h>     // Blynk for ESP8266WiFi Library
@@ -8,27 +8,20 @@ v#include <TridentTD_LineNotify.h>   //Line Notify Library
 #define BLYNK_PRINT Serial          // Comment this out to disable prints and save space
 #define DHTPIN 12                   // Digital pin D6
 #define DHTTYPE DHT11               // DHT 11 Sensor
-//#define DHTTYPE DHT21             //DHT 21 (AM2301)
-//#define DHTTYPE DHT22             //DHT 22  (AM2302), AM2321
+//#define DHTTYPE DHT21             // DHT 21 (AM2301)
+//#define DHTTYPE DHT22             // DHT 22  (AM2302), AM2321
 
-<<<<<<< HEAD
 /*----------------------------Setup Internet----------------------------*/
 #define WIFI_SSID "PSAIR"                                         //Wifi Name
 #define WIFI_PASSWORD "0819054859"                                //Password Wifi 
 #define LINE_TOKEN "GL1puVNedgl7Au7glxVuGE7VO00ZmMt9gr1BrRkx0rD"  //Line Token Key
-=======
-/*----------------------------Setup Blnyk Connection----------------------------*/
-//#define WIFI_SSID "No one"             //Wifi Name
-//#define WIFI_PASSWORD "linsing607"         //Password Wifi 
-//#define LINE_TOKEN "hNhAxKpBHoM5iQ6EPQ0i7luXhfwcGBIZkTu3JfbshQG"            //Line Token Key
->>>>>>> 6afcc9e83cff406bb0197dd48b9ead04934ab100
 /*------------------------------------------------------------------------------*/
 
 /*----------------------------Setup Blnyk Connection----------------------------/
-    char auth[] = "...";            //Enter the Auth code which was send by Blink. You should get Auth Token in the Blynk App.
-                                    //Go to the Project Settings (nut icon).
-    char ssid[] = "PSAIR";          //Enter your WIFI Name
-    char pass[] = "0819054859";     //Enter your WIFI Password
+    char auth[] = "...";                    //Enter the Auth code which was send by Blink. You should get Auth Token in the Blynk App.
+                                            //Go to the Project Settings (nut icon).
+    char ssid[] = "...";                    //Enter your WIFI Name
+    char pass[] = "...";                    //Enter your WIFI Password
 /------------------------------------------------------------------------------*/
 
 DHT dht(DHTPIN, DHTTYPE);               // setting pin to DHTPIN and DHTTYPE 11
@@ -97,11 +90,7 @@ void sendSensor(){
 /----------------------------------------------------------------------*/
 
 void setup() {
-<<<<<<< HEAD
     dht.begin();            
-=======
-    dht.begin();
->>>>>>> 6afcc9e83cff406bb0197dd48b9ead04934ab100
     //Blynk.begin(auth, ssid, pass);  //connect blynk app
     Serial.begin(115200);
     Serial.println(LINE.getVersion());
@@ -110,7 +99,6 @@ void setup() {
         Serial.print(".");
         delay(500);
     }
-    showLCD(); // Call function LCD
     Serial.println();
     Serial.print("connected: ");
     Serial.println(WiFi.localIP());
@@ -126,7 +114,8 @@ void loop() {
         lcd.print("Failed to read from DHT sensor!");
         return;
     }
-    if (t > 33) {
+    showLCD(); // Call function LCD
+    if (t > 31 && h > 50) {
         String LineText;
         String string1 = "อุณหภูมิ เกินกำหนด ";
         String string2 = " °C";
@@ -134,8 +123,8 @@ void loop() {
         //Serial.print("Line ");
         Serial.println(LineText);
         LINE.notify(LineText + "ความชื้น "+String(h)+" %");
+        delay(60000);
     }
-    delay(5000);
     if(t > 0 && h > 0){
         Serial.print("Humidity: ");
         Serial.print(h);
@@ -143,7 +132,6 @@ void loop() {
         Serial.print("Temp: ");
         Serial.println(t);
         Serial.println("..............................."); 
-        Serial.print("Line ");
         delay(1000);
   }
 }
