@@ -28,8 +28,7 @@
 *
 
 ## Code
-* [Project File Motor Controll](https://github.com/peeza2231/Mini-Project-ComPro-KMITL/blob/master/roofoneoff/motor_control/motor_control.ino)
-* [Project File Temperature LCD](https://github.com/peeza2231/Mini-Project-ComPro-KMITL/blob/master/temperatureCode/temperatureCode.ino)
+* [Project File](https://github.com/peeza2231/Mini-Project-ComPro-KMITL/blob/master/roofoneoff/motor_control/motor_control.ino)
 
 ## System Diagram
 * Temperature Diagram
