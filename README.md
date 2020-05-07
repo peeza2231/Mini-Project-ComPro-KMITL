@@ -34,8 +34,10 @@ My Garden My Order กระถางต้นไม้ที่หลังค�
 
 ## System Diagram
 * Temperature Diagram
+* Car Diagram
 ![System Diagram](image/tempcircuit.png)
 ![System Diagram](image/diagramcar.png)
+---
 
 ## Presentation
 * [Youtube](https://www.youtube.com/watch?v=fbJRhT-bAE0)
@@ -52,6 +54,7 @@ My Garden My Order กระถางต้นไม้ที่หลังค�
 ## Special Thanks to
 * Panwit Tuwanut
 * Kitsuchart Pasupa
+---
 
 <p align=center>
 <image src="image/itlogo.png" width="250px" height="200px">
