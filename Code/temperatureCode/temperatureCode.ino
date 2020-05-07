@@ -1,6 +1,5 @@
 #include <TridentTD_LineNotify.h>   //Line Notify Library
 #include <ESP8266WiFi.h>
-//#include <SPI.h>
 #include <BlynkSimpleEsp8266.h>     // Blynk for ESP8266WiFi Library
 #include <SimpleTimer.h>
 #include <DHT.h>                    // DHT Sensors Library
@@ -17,12 +16,12 @@
 #define LINE_TOKEN "GL1puVNedgl7Au7glxVuGE7VO00ZmMt9gr1BrRkx0rD"  //Line Token Key
 /*------------------------------------------------------------------------------*/
 
-/*----------------------------Setup Blnyk Connection----------------------------/
-    char auth[] = "...";                    //Enter the Auth code which was send by Blink. You should get Auth Token in the Blynk App.
+/*----------------------------Setup Blnyk Connection----------------------------*/
+    char auth[] = "xXsFom1QgWE5cpj2PdJUV28-hcmOzmnd";                    //Enter the Auth code which was send by Blink. You should get Auth Token in the Blynk App.
                                             //Go to the Project Settings (nut icon).
     char ssid[] = "...";                    //Enter your WIFI Name
     char pass[] = "...";                    //Enter your WIFI Password
-/------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
 
 DHT dht(DHTPIN, DHTTYPE);               // setting pin to DHTPIN and DHTTYPE 11
 //SimpleTimer timer;                      // that you define how often to send data to Blynk App.
@@ -75,7 +74,7 @@ void showLCD(){
     lcd.print("%H");
 }
 
-/*-----------------------Function Show in Blynk Application---------------/
+/*-----------------------Function Show in Blynk Application---------------*/
 void sendSensor(){
   float h = dht.readHumidity();
   float t = dht.readTemperature(); // or dht.readTemperature(true) for Fahrenheit
@@ -87,11 +86,12 @@ void sendSensor(){
   Blynk.virtualWrite(V5, h);  //V5 is for Humidity
   Blynk.virtualWrite(V6, t);  //V6 is for Temperature
 }
-/----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
 
 void setup() {
     dht.begin();            
-    //Blynk.begin(auth, ssid, pass);  //connect blynk app
+    Blynk.begin(auth, ssid, pass);  //connect blynk app
+    timer.setInterval(1000L, sendSensor);   // Setup a function to be called every second
     Serial.begin(115200);
     Serial.println(LINE.getVersion());
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);   Serial.print("connecting");
@@ -103,19 +103,19 @@ void setup() {
     Serial.print("connected: ");
     Serial.println(WiFi.localIP());
     LINE.setToken(LINE_TOKEN); // กำหนด Line Token
-  
-  //timer.setInterval(1000L, sendSensor);   // Setup a function to be called every second
+    timer.setInterval(1000L, sendSensor);   // Setup a function to be called every second
   }
 
 void loop() {
+    Blynk.run();
+    timer.run();
     float h = dht.readHumidity();
     float t = dht.readTemperature();
     if (isnan(h) || isnan(t)) {
         lcd.print("Failed to read from DHT sensor!");
         return;
     }
-    showLCD(); // Call function LCD
-    if (t > 31 && h > 50) {
+    if (t > 33 && h > 50) {
         String LineText;
         String string1 = "อุณหภูมิ เกินกำหนด ";
         String string2 = " °C";
@@ -123,8 +123,8 @@ void loop() {
         //Serial.print("Line ");
         Serial.println(LineText);
         LINE.notify(LineText + "ความชื้น "+String(h)+" %");
-        delay(60000);
     }
+    delay(6000);
     if(t > 0 && h > 0){
         Serial.print("Humidity: ");
         Serial.print(h);
@@ -134,4 +134,5 @@ void loop() {
         Serial.println("..............................."); 
         delay(1000);
   }
+  showLCD(); // Call function LCD
 }
