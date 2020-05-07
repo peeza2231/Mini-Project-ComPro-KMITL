@@ -1,7 +1,6 @@
 #include <TridentTD_LineNotify.h>   //Line Notify Library
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>     // Blynk for ESP8266WiFi Library
-#include <SimpleTimer.h>
 #include <DHT.h>                    // DHT Sensors Library
 #include <LiquidCrystal_I2C.h>      // LCD I2C Library
 #define BLYNK_PRINT Serial          // Comment this out to disable prints and save space

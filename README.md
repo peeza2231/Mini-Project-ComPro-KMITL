@@ -1,9 +1,11 @@
-#My Cactus My Garden
-
+## My Garden My Order
+* เนื่องจากในโลกยุคปัจจุบันชีวิตของคนเรามีความเร่งรีบมากกว่าแต่ก่อนแล้วถ้าหากเรามีต้นไม้ที่เรารักและมันต้องการการดูแล
+เราจะทำยังไงถ้าหากเรานำมันไปรับแดดแล้วเกิดแดดแรงเกินไปหรือฝนตกจนรากของต้นไม้เน่าเราจะทำยังไงเราจึงขอนำเสนอ
+My Garden My Order กระถางต้นไม้ที่หลังคาสามรถเปิดปิดอัติโนมัติและสามารถวัดอุณหภูมิเพื่อแจ้งเตือนทางไลน์ได้อีกด้วย
 ---
 ## Objective
-*
-*
+* ช่วยให้ประหยัดเวลาในการดูแลต้นได้มากขึ้น
+* ในการแจ้งเตือนอุณหภูมิทางไลน์ช่วยให้เรารู้ว่าเราควรเปิด-ปิดหลังคาตอนไหนเพื่อให้ต้นไม้ได้รับอากาศที่ดีเข้าไป
 
 ## Equipments and Devices
 <image src="image/1.jpg" width="33%" height="33%"><image src="image/2.jpg" width="33%" height="33%"><image src="image/3.jpg" width="33%" height="33%">
@@ -24,18 +26,18 @@
 * C++
 
 ## How it works
-*
-*
+* เมื่อสั่งการจากแอปพลิเคชั่นมอเตอร์จะทำงานล้อจะหมุนไปและหลังคาจะปิด/เปิด
+* หากอุณหูมิเกินกำหนดจะส่งแจ้งเตือนไปทางไลน์โดยจะส่งค่าความชื้นและอุณหภูมิ
 
 ## Code
-* [Project File](https://github.com/peeza2231/Mini-Project-ComPro-KMITL/blob/master/roofoneoff/motor_control/motor_control.ino)
+* [Project File](https://github.com/peeza2231/Mini-Project-ComPro-KMITL/tree/master/Code)
 
 ## System Diagram
 * Temperature Diagram
 ![System Diagram](image/tempcircuit.png)
 
 ## Presentation
-* [Youtube]
+* [Youtube](https://www.youtube.com/watch?v=fbJRhT-bAE0)
 * [Poster]
 
 ## Contributors
