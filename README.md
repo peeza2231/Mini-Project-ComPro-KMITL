@@ -38,7 +38,7 @@ My Garden My Order กระถางต้นไม้ที่หลังค�
 
 ## Presentation
 * [Youtube](https://www.youtube.com/watch?v=fbJRhT-bAE0)
-* [Poster]
+* [Poster](<image src="image/cp-ject-poster.jpg" width="33%" height="33%">)
 
 ## Contributors
 |Student ID|Name|User Github|
