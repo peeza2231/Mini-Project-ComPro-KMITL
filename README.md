@@ -43,6 +43,9 @@ My Garden My Order กระถางต้นไม้ที่หลังค�
 * [Youtube](https://www.youtube.com/watch?v=fbJRhT-bAE0)
 * [Poster](image/cp-ject-poster.jpg)
 
+## Resources
+* `Project Hub` - [https://create.arduino.cc/projecthub/](https://create.arduino.cc/projecthub/my-garden/my-garden-my-order-6357ee?auth_token=aff490c873acf1e8b129fbe03aa505d3)
+
 ## Contributors
 |Student ID|Name|User Github|
 |--|--|--|
