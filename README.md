@@ -35,7 +35,7 @@ My Garden My Order กระถางต้นไม้ที่หลังค�
 ## System Diagram
 * Temperature Diagram
 ![System Diagram](image/tempcircuit.png)
-![System Diagram](image/diagramcar.png)
+![System Diagram](image/diamgrammotor.png)
 
 ## Presentation
 * [Youtube](https://www.youtube.com/watch?v=fbJRhT-bAE0)
